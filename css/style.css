@@ -1,7 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 *{
     box-sizing: border-box;
 }
 
+:root{
+    --light-green: #9ad896;
+    --blush: #FF9191;
+    --dark-blush: #4f2727;
+    --light-blue: #91FFF8;
+    --yellow: #FFF691;
+    --background-color: #111111;
+    --header-color: #161616;
+    --grey: #919191;
+    --hover-color: #ffffff0d;
+}
+
 body{
     margin: 0;
+    font-family: "Fira Code", Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color: white;
+}
+main{
+    min-height: calc(100vh - 10rem);
+}
+
+section{
+    padding: 1rem 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1rem 2rem;
+    background-color: var(--header-color);
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    ul{
+        li{
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+
+        }
+    }
+}
+
+footer{
+    padding: 0rem 2rem ;
+    color: var(--grey);
+    p{
+        font-size: 0.8em;
+    }
+}
+
+h1{
+    font-weight: 500;
+}
+h2{
+    font-weight: 300;
+}
+h3{
+    font-weight: 300;
+}
+h4{
+    font-weight: 500;
+    line-height: 0;
+}
+
+.drop-shaddow{
+    filter: drop-shadow(0px 5px 4px #0000007e);
+}
+
+#categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    article{
+        padding: 1rem 2rem;
+        background-color: var(--background-color);
+        display: flex;
+        height: 15rem;
+        flex-grow: 1;
+        min-width: 300px;
+        border-radius: 16px;
+            a{
+                color: white;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+            } 
+    }
+
+}
+
+#card1{
+    border: 1px solid var(--blush);
+    }
+#card1:hover{
+        background-image: url("/img/guitar_v7.jpg");
+        background-size: cover;
+        transition: 0.5s;
+        filter: drop-shadow(5px 5px 4px var(--dark-blush));
+    } 
+    
+#card2{
+    border: 1px solid var(--light-blue);
+    }
+#card3{
+    border: 1px solid var(--yellow);
+    }
+
+.line-active{
+    height: 1px;
+    width: 100%;
+    margin-top: 5px;
+}
+.background-color1{
+    background-color: var(--blush);
+}
+.color1{
+    color: var(--blush);
+}
+.background-color2{
+    background-color: var(--light-blue);
+}
+.color2{
+    color: var(--light-blue);
+}
+.background-color3{
+    background-color: var(--yellow);
+}
+.color3{
+    color: var(--yellow);
+}
+
+
+
+@media only screen and (max-width: 500px){
+    header{
+        ul{
+            display: none;
+        }
+    }
 }

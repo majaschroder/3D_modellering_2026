@@ -42,6 +42,10 @@ header{
             color: white;
             text-decoration: none;
         }
+        a:hover{
+            color: var(--grey);
+            transition: 0.3s;
+        }
     ul{
         li{
             display: flex;
@@ -82,6 +86,7 @@ h4{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+
     article{
         padding: 1rem 2rem;
         background-color: var(--background-color);
@@ -97,38 +102,31 @@ h4{
                 text-decoration: none;
             } 
     }
-
 }
 
 #card1{
     border: 1px solid var(--blush);
     }
 #card1:hover{
-        background-image: url("/img/guitar_v7.jpg");
-        background-size: cover;
-        transition: 0.5s;
-        filter: drop-shadow(5px 5px 4px var(--dark-blush));
-    } 
+    transition: 0.5s;
+    filter: drop-shadow(5px 5px 4px var(--dark-blush));
+} 
 
 #card2{
     border: 1px solid var(--light-blue);
     }
 #card2:hover{
-        background-image: url("/img/guitar_v7.jpg");
-        background-size: cover;
-        transition: 0.5s;
-        filter: drop-shadow(5px 5px 4px var(--dark-blue));
-    } 
+    transition: 0.5s;       
+    filter: drop-shadow(5px 5px 4px var(--dark-blue));
+} 
 
 #card3{
     border: 1px solid var(--yellow);
     }
 #card3:hover{
-        background-image: url("/img/guitar_v7.jpg");
-        background-size: cover;
-        transition: 0.5s;
-        filter: drop-shadow(5px 5px 4px var(--dark-yellow));
-    } 
+    transition: 0.5s;
+    filter: drop-shadow(5px 5px 4px var(--dark-yellow));
+} 
 
 .line-active{
     height: 1px;
@@ -152,6 +150,25 @@ h4{
 }
 .color3{
     color: var(--yellow);
+}
+
+.project-info{
+    a{
+        color: var(--light-blue);
+    }
+    a:visited{
+        color: var(--light-blue);
+    }
+    a:hover{
+        color: var(--light-green);
+        transition: 0.3s;
+    }
+}
+
+.gallery{
+    img{
+        width: 100%;
+    }
 }
 
 

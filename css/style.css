@@ -7,9 +7,11 @@
 :root{
     --light-green: #9ad896;
     --blush: #FF9191;
-    --dark-blush: #4f2727;
+    --dark-blush: #943b3b;
     --light-blue: #91FFF8;
+    --dark-blue: #1c726c;
     --yellow: #FFF691;
+    --dark-yellow: #746b08;
     --background-color: #111111;
     --header-color: #161616;
     --grey: #919191;
@@ -73,7 +75,7 @@ h4{
 }
 
 .drop-shaddow{
-    filter: drop-shadow(0px 5px 4px #0000007e);
+    filter: drop-shadow(0px 5px 10px #0000004c);
 }
 
 #categories{
@@ -107,13 +109,26 @@ h4{
         transition: 0.5s;
         filter: drop-shadow(5px 5px 4px var(--dark-blush));
     } 
-    
+
 #card2{
     border: 1px solid var(--light-blue);
     }
+#card2:hover{
+        background-image: url("/img/guitar_v7.jpg");
+        background-size: cover;
+        transition: 0.5s;
+        filter: drop-shadow(5px 5px 4px var(--dark-blue));
+    } 
+
 #card3{
     border: 1px solid var(--yellow);
     }
+#card3:hover{
+        background-image: url("/img/guitar_v7.jpg");
+        background-size: cover;
+        transition: 0.5s;
+        filter: drop-shadow(5px 5px 4px var(--dark-yellow));
+    } 
 
 .line-active{
     height: 1px;

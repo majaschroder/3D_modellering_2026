@@ -160,7 +160,7 @@ h4{
         color: var(--light-green);
     }
     a:hover{
-        color: var(--light-green);
+        color: var(--light-blue);
         transition: 0.3s;
     }
 }

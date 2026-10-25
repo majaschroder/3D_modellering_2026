@@ -6,6 +6,7 @@
 
 :root{
     --light-green: #9ad896;
+    --dark-green: #204d2f;
     --blush: #FF9191;
     --dark-blush: #943b3b;
     --light-blue: #91FFF8;
@@ -71,7 +72,7 @@ h2{
     font-weight: 300;
 }
 h3{
-    font-weight: 300;
+    font-weight: 500;
 }
 h4{
     font-weight: 500;
@@ -95,6 +96,11 @@ h4{
         flex-grow: 1;
         min-width: 300px;
         border-radius: 16px;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+        background-blend-mode: lighten;
             a{
                 color: white;
                 width: 100%;
@@ -104,8 +110,11 @@ h4{
     }
 }
 
+
 #card1{
     border: 1px solid var(--blush);
+    background-image: url('img/Bass_strings.jpg');
+
     }
 #card1:hover{
     transition: 0.5s;
@@ -113,20 +122,49 @@ h4{
 } 
 
 #card2{
-    border: 1px solid var(--light-blue);
+    border: 1px solid var(--light-green);
+    background-image: url('img/Total_01.jpg');
     }
 #card2:hover{
     transition: 0.5s;       
-    filter: drop-shadow(5px 5px 4px var(--dark-blue));
+    filter: drop-shadow(5px 5px 4px var(--dark-green));
 } 
 
 #card3{
     border: 1px solid var(--yellow);
+    background-image: url('img/Wall-E_HD-med.jpg');
     }
 #card3:hover{
     transition: 0.5s;
     filter: drop-shadow(5px 5px 4px var(--dark-yellow));
 } 
+
+#card4{
+    border: 1px solid var(--light-blue);
+    background-image: url('img_anim/Anim_Oblig_01_09_50_Amin_1_0150.png');
+    
+    }
+#card4:hover{
+    transition: 0.5s;
+    filter: drop-shadow(5px 5px 4px var(--dark-blue));
+} 
+
+#card5{
+    border: 1px solid var(--blush);
+    }
+#card5:hover{
+    transition: 0.5s;       
+    filter: drop-shadow(5px 5px 4px var(--dark-blush));
+} 
+
+#card6{
+    border: 1px solid var(--light-green);
+    }
+#card6:hover{
+    transition: 0.5s;
+    filter: drop-shadow(5px 5px 4px var(--dark-green));
+} 
+
 
 .line-active{
     height: 1px;
@@ -151,16 +189,19 @@ h4{
 .color3{
     color: var(--yellow);
 }
+.color4{
+    color: var(--light-green);
+}
 
 .project-info{
     a{
-        color: var(--light-green);
+        color: #ffffff;
     }
     a:visited{
-        color: var(--light-green);
+        color: #ffffff;
     }
     a:hover{
-        color: var(--light-blue);
+        color: var(--light-green);
         transition: 0.3s;
     }
 }
@@ -168,6 +209,10 @@ h4{
 .gallery{
     img{
         width: 100%;
+    }
+    iframe{
+        width: 100%;
+        height: 90vh;
     }
 }
 

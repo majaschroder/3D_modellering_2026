@@ -8,6 +8,8 @@
     --light-green: #9ad896;
     --dark-green: #204d2f;
     --blush: #FF9191;
+    --purple: #bba3ff;
+    --dark-purple: rgb(113, 67, 176);
     --dark-blush: #943b3b;
     --light-blue: #91FFF8;
     --dark-blue: #1c726c;
@@ -150,11 +152,12 @@ h4{
 } 
 
 #card5{
-    border: 1px solid var(--blush);
+    border: 1px solid var(--purple);
+    background-image: url('img_anim/Anim_Oblig2_38_bake_1_0503_crop.png');
     }
 #card5:hover{
     transition: 0.5s;       
-    filter: drop-shadow(5px 5px 4px var(--dark-blush));
+    filter: drop-shadow(5px 5px 4px var(--dark-purple));
 } 
 
 #card6{
@@ -191,6 +194,9 @@ h4{
 }
 .color4{
     color: var(--light-green);
+}
+.color5{
+    color: var(--purple);
 }
 
 .project-info{
